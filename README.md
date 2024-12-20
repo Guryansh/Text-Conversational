@@ -1,31 +1,54 @@
-# Text-Conversational
+# TOPSIS-Based Text Conversational Analysis
 
-In this TOPSIS is applied on the analysis of a conversation based on the preprocessing on several parameters like
-Sentiment, Engagement, Response Time, Clarity, Relevance
+This project applies the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** method to analyze conversational data based on various preprocessed parameters. The goal is to identify the best-performing models for different emotions (e.g., Happy, Sad, Anger, Thinking) across multiple conversation domains.
 
-- Sentiment Score (range -1 to 1)
-- Engagement (reply count, normalized)
-- Response Time (in seconds, normalized)
-- Clarity (Flesch-Kincaid score)
-- Relevance (cosine similarity score)
-- User Satisfaction Score
+## Features
 
-### For Anger
+- **TOPSIS Methodology**: Normalizes and weights multiple parameters to calculate relative closeness scores.
+- **Emotion Analysis**: Separates data by emotion and identifies the best-performing model for each.
+- **Excel Output**: Generates an Excel file with separate sheets for each emotion and a summary sheet of best models.
+- **Custom Parameters**: Evaluates conversations based on the following parameters:
+  - **Sentiment Score**: Range (-1 to 1), measures overall sentiment.
+  - **Engagement**: Reply count, normalized.
+  - **Response Time**: Time taken to respond, normalized.
+  - **Clarity**: Flesch-Kincaid readability score.
+  - **Relevance**: Cosine similarity score between user query and response.
+  - **User Satisfaction Score**: Subjective feedback score.
 
-![p1ia3n3vucms67ifru51ehnto54-2](https://github.com/user-attachments/assets/6d6205f5-94aa-43f5-aa0e-0d5226b5428f)
+## Workflow
 
-### For Happy
+The workflow of the analysis can be summarized as follows:
 
-![p1ia3n3vucms67ifru51ehnto54-0](https://github.com/user-attachments/assets/f6a57e82-0cf1-40ca-a531-addf64bc056d)
+| **Step**               | **Process**                                                                                             |
+|------------------------|---------------------------------------------------------------------------------------------------------|
+| **Step 1: Data Input** | Load conversational data with emotions, domains, models, and evaluation parameters (e.g., P1 to P6).    |
+| **Step 2: Preprocessing** | Normalize the parameters using Min-Max scaling for consistency.                                       |
+| **Step 3: TOPSIS**     | Apply the TOPSIS method to calculate scores and ranks for each model in a given emotion-domain subset.   |
+| **Step 4: Best Model** | Identify the best-performing model for each domain and overall for each emotion.                        |
+| **Step 5: Export**     | Save results in an Excel file with separate sheets for each emotion and a summary sheet.                |
 
-### For Sad
+## Results Visualization
 
-![p1ia3n3vucms67ifru51ehnto54-1](https://github.com/user-attachments/assets/fdf070ad-d282-4e0d-8a9c-b0aa6adaf229)
+### Emotion-Specific Analysis
 
-### For Thinking
+#### Happy  
+![Happy Analysis](https://github.com/user-attachments/assets/f6a57e82-0cf1-40ca-a531-addf64bc056d)
 
-![p1ia3n3vucms67ifru51ehnto54-3](https://github.com/user-attachments/assets/83af3c76-9a52-4222-9a90-0faacf225e89)
+#### Sad  
+![Sad Analysis](https://github.com/user-attachments/assets/fdf070ad-d282-4e0d-8a9c-b0aa6adaf229)
 
-## Result
+#### Anger  
+![Anger Analysis](https://github.com/user-attachments/assets/6d6205f5-94aa-43f5-aa0e-0d5226b5428f)
 
-![p1ia3n3vucms67ifru51ehnto54-4](https://github.com/user-attachments/assets/3b6e1412-4b07-429a-9f27-f0c62443eaec)
+#### Thinking  
+![Thinking Analysis](https://github.com/user-attachments/assets/83af3c76-9a52-4222-9a90-0faacf225e89)
+
+### Overall Summary  
+![Overall Results](https://github.com/user-attachments/assets/3b6e1412-4b07-429a-9f27-f0c62443eaec)
+
+## Installation
+
+1. Clone the repository:  
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
