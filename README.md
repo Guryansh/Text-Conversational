@@ -48,3 +48,5 @@ The workflow of the analysis can be summarized as follows:
 
 ### Overall Summary  
 ![Overall Results](https://github.com/user-attachments/assets/3b6e1412-4b07-429a-9f27-f0c62443eaec)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
