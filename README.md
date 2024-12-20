@@ -1,6 +1,9 @@
 # TOPSIS-Based Text Conversational Analysis
 
 This project applies the **TOPSIS (Technique for Order Preference by Similarity to Ideal Solution)** method to analyze conversational data based on various preprocessed parameters. The goal is to identify the best-performing models for different emotions (e.g., Happy, Sad, Anger, Thinking) across multiple conversation domains.
+## Authors
+
+- [@Guryansh](https://www.github.com/Guryansh)
 
 ## Features
 
@@ -45,10 +48,3 @@ The workflow of the analysis can be summarized as follows:
 
 ### Overall Summary  
 ![Overall Results](https://github.com/user-attachments/assets/3b6e1412-4b07-429a-9f27-f0c62443eaec)
-
-## Installation
-
-1. Clone the repository:  
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
